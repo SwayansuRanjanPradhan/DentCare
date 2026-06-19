@@ -149,25 +149,28 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <h4 class="mb-4">Receive messages instantly with our PHP and Ajax contact form - available in the <a
-                            href="https://htmlcodex.com/downloading/?item=1837">Pro Version</a> only.</h4>
-                    <form>
+                    <h4 class="mb-4">Send us a message and our team will get back to you promptly. For urgent queries,
+                        call <br><a href="tel:+917349559999" class="text-primary">+91 73495 59999</a><br><a
+                            href="tel:08045559999" class="text-primary">080-45559999</a>.</h4>
+                    <form data-formsubmit data-subject="New Contact Enquiry from Contact Page">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="Form Source" value="Contact Page Form">
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
-                                    style="height: 55px;">
+                                <input type="text" name="Name" class="form-control border-0 bg-light px-4" placeholder="Your Name"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
-                                    style="height: 55px;">
+                                <input type="email" name="Email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
-                                    style="height: 55px;">
+                                <input type="text" name="Subject" class="form-control border-0 bg-light px-4" placeholder="Subject"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="5"
-                                    placeholder="Message"></textarea>
+                                <textarea name="Message" class="form-control border-0 bg-light px-4 py-3" rows="5"
+                                    placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
@@ -176,10 +179,7 @@
                     </form>
                 </div>
                 <div class="col-xl-4 col-lg-12 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d348.58407619616685!2d77.6247588!3d13.0398811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176c7863fdb1%3A0x385616165ba6721d!2sImage%20Diagnostics!5e1!3m2!1sen!2sin!4v1781852575539!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -320,6 +320,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Form Handler -->
+    <script src="js/form-handler.js"></script>
 </body>
 
 </html>
