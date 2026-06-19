@@ -353,7 +353,7 @@ h6,
     box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     transform: translateX(calc(100% - 50px));
-    width: 200px;
+    width: 270px;
 }
 
 .floating-service-item:nth-child(2) {

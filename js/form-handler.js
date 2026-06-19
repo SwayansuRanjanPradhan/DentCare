@@ -1,9 +1,3 @@
-/**
- * Form Handler for Image Diagnostics
- * Uses FormSubmit.co to send form data to info@imagediagnostics.in
- * Works with static HTML — no backend required.
- */
-
 (function () {
     'use strict';
 
